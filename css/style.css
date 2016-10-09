@@ -1,0 +1,66 @@
+body {
+  /*background-color: black;*/
+}
+
+main {
+  background-color: yellow;
+}
+
+.table {
+  width: 33.33%;
+  height: 580px;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.food_map {
+  width: 33.33%;
+  height: 580px;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+}
+
+tbody {
+  display: table;
+}
+
+.middle {
+  width: 33.33%;
+  height: 580px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+  position: relative;
+}
+
+.food_map {
+  width: 33.33%;
+  height: 580px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 30px;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+#man {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
