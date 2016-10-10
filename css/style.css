@@ -132,10 +132,14 @@ display: inline-block;
   background-color: white;
 }
 
+#italy_1, #italy_2, #italy_3, #italy_4, #italy_5, #italy_6 {
+  display: inline-block;
+  width: 200px;
+  height: 160px;
+}
 
-
-#italy_map {
+/*#italy_map {
   margin-top: 70px;
 margin-left: 10px;
 
-}
+}*/

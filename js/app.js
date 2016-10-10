@@ -11,6 +11,12 @@ $(function() {
   $("#plate_10").flip();
   $("#plate_11").flip();
   $("#plate_12").flip();
+  $("#italy_1").flip();
+  $("#italy_2").flip();
+  $("#italy_3").flip();
+  $("#italy_4").flip();
+  $("#italy_5").flip();
+  $("#italy_6").flip();
 
   var $food = $('.food');
   var choice_1 = null;
@@ -27,7 +33,8 @@ $(function() {
     }
 
     if (choice_2 && choice_1.data('food') === choice_2.data('food')) {
-      console.log('match');
+      console.log(choice_2);
+      $('#italy_' + choice_2.data('italy')).flip(true);
       choice_1 = null;
       choice_2 = null;
     } else if (choice_2 && choice_1.data('food') !== choice_2.data('food')) {
