@@ -1,8 +1,6 @@
-body {
-  /*background-color: black;*/
-}
 
-main {
+
+/*main {
   background-color: yellow;
 }
 
@@ -63,4 +61,81 @@ li {
   left: 0;
   right: 0;
   margin: 0 auto;
+}*/
+body {
+  background-color: yellow;
+}
+
+main {
+width: 100%;
+height: 100%;
+}
+.green {
+  /*background-color: green;
+  width: 600px;
+  height: 600px;*/
+  width: 33.33%;
+  height: 570px;
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+}
+.white {
+  width: 33.33%;
+  height: 570px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+  position: relative;
+}
+
+.red {
+  /*background-color: red;
+  width: 600px;
+  height: 600px;*/
+  width: 33.33%;
+  height: 570px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+
+.row_1 {
+  width: 100%;
+  height: 190px;
+}
+.row_2 {
+  width: 100%;
+  height: 190px;
+}
+.row_3 {
+  width: 100%;
+  height: 190px;
+}
+
+
+#plate_1, #plate_2, #plate_3,#plate_4, #plate_5, #plate_6,#plate_7, #plate_8, #plate_9,#plate_10, #plate_11, #plate_12  {
+  width: 150px;
+  height: 150px;
+display: inline-block;
+}
+
+.img_crop {
+  width: 150px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+
+#italy_map {
+  margin-top: 70px;
+margin-left: 10px;
+
 }

@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
-    <title>Project 1</title>
-  </head>
-  <body>
-    <main class="wrapper">
-      <table class="table">
-        <tr class="row_1">
-          <th class="food" id="gelato_a" data-food="gelato"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="cannoli_a" data-food="cannoli"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="peperoncino_a" data-food="peperoncino"><img src="images/plate.png" alt="" /></th>
-        </tr>
-        <tr class="row_2">
-          <th class="food" id="olio_a" data-food="olio"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="pizza_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="limoncello_a"><img src="images/plate.png" alt="" /></th>
-        </tr>
-        <tr class="row_3">
-          <th class="food" id="amatriciana_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="vino_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="parmiggiano_a"><img src="images/plate.png" alt="" /></th>
-        </tr>
-        <tr class="row_4">
-          <th class="food" id="bolognese_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="prosciutto_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="culatello_a"><img src="images/plate.png" alt="" /></th>
-        </tr>
-        <tr class="row_5">
-          <th class="food" id="spritz_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="risotto_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="tartufo_a"><img src="images/plate.png" alt="" /></th>
-        </tr>
-        <tr class="row_6">
-          <th class="food" id="pesto_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="involtini_a"><img src="images/plate.png" alt="" /></th>
-          <th class="food" id="fiorentina_a"><img src="images/plate.png" alt="" /></th>
-        </tr>
-      </table>
-      <div class="middle">
-        <h1><span style="color: green;">Buon </span><span style="color: white;">appet</span><span style="color:red;">ito!!</span></h1>
-        <img id="man" src="images/italy_map.png" alt="" />
-      </div>
-        <table class="food_map">
-          <tr class="row_1">
-            <th class="food" id="gelato_b" data-food="gelato"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="cannoli_b" data-food="cannoli"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="peperoncino_b" data-food="peperoncino"><img src="images/plate.png" alt="" /></th>
-          </tr>
-          <tr class="row_2">
-            <th class="food" id="olio_b" data-food="olio"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="pizza_b" data-food="pizza"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="limoncello_b" data-food="limoncello"><img src="images/plate.png" alt="" /></th>
-          </tr>
-          <tr class="row_3">
-            <th class="food" id="amatriciana_b" data-food="amatriciana"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="vino_b" data-food="vino"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="parmiggiano_b" data-food="parmiggiano"><img src="images/plate.png" alt="" /></th>
-          </tr>
-          <tr class="row_4">
-            <th class="food" id="bolognese_b" data-food="bolognese"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="prosciutto_b" data-food="prosciutto"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="culatello_b" data-food="culatello"><img src="images/plate.png" alt="" /></th>
-          </tr>
-          <tr class="row_5">
-            <th class="food" id="spritz_b" data-food="spritz"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="risotto_b" data-food="risotto"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="tartufo_b" data-food="tartufo"><img src="images/plate.png" alt="" /></th>
-          </tr>
-          <tr class="row_6">
-            <th class="food" id="pesto_b" data-food="pesto"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="involtini_b" data-food="involtini"><img src="images/plate.png" alt="" /></th>
-            <th class="food" id="fiorentina_b" data-food="fiorentina"><img src="images/plate.png" alt="" /></th>
-          </tr>
-        </table>
-        <div id="result" style="text-align: center;">123</>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <title>Project 1</title>
+</head>
+<body>
+  <main>
+    <div class="green">
+      <div class="row_1">
+        <div id="plate_1" class="food" data-food="panettone">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/panettone.jpg"></div>
         </div>
-    </main>
-    <script type="text/javascript" src="js/app.js">
+        <div id="plate_2" class="food" data-food="cannoli">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/cannolo.jpg"></div>
+        </div>
+      </div>
+      <div class="row_2">
+        <div id="plate_3" class="food" data-food="peperoncino">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/peperoncino.jpg"></div>
+        </div>
+        <div id="plate_4" class="food" data-food="carbonara">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/carbonara.jpg"></div>
+        </div>
+      </div>
+      <div class="row_3">
+        <div id="plate_5" class="food" data-food="pizza">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/pizza.jpg"></div>
+        </div>
+        <div id="plate_6" class="food" data-food="tortellini">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/tortellini.jpg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="white">
+      <div id="italy_map">
+        <img src="images/map/map_1.jpeg" id="map" alt="" />
+        <img src="images/map/map_2.jpeg" id="map" alt="" />
+        <img src="images/map/map_3.jpeg" id="map" alt="" />
+        <img src="images/map/map_4.jpeg" id="map" alt="" />
+        <img src="images/map/map_5.jpeg" id="map" alt="" />
+        <img src="images/map/map_6.jpeg" id="map" alt="" />
+      </div>
 
-    </script>
+    </div>
+    <div class="red">
+      <div class="row_1">
+        <div id="plate_7" class="food" data-food="pizza">
+          <div class="front"><img class="img_crop" src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/pizza.jpg"></div>
+        </div>
+        <div id="plate_8" class="food" data-food="tortellini">
+          <div class="front"><img class="img_crop"src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop" src="images/tortellini.jpg"></div>
+        </div>
+      </div>
+      <div class="row_2">
+        <div id="plate_9" class="food" data-food="panettone">
+          <div class="front"><img class="img_crop"src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop"src="images/panettone.jpg"></div>
+        </div>
+        <div id="plate_10" class="food" data-food="cannoli">
+          <div class="front"><img class="img_crop"src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop"src="images/cannolo.jpg"></div>
+        </div>
+      </div>
+      <div class="row_3">
+        <div id="plate_11" class="food" data-food="carbonara">
+          <div class="front"><img class="img_crop"src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop"src="images/carbonara.jpg"></div>
+        </div>
+        <div id="plate_12" class="food" data-food="peperoncino">
+          <div class="front"><img class="img_crop"src="images/plate.jpg"></div>
+          <div class="back"><img class="img_crop"src="images/peperoncino.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <script type="text/javascript" src="js/app.js"></script>
+
   </body>
-</html>
+  </html>
