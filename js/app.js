@@ -11,12 +11,24 @@ $(function() {
   $("#plate_10").flip();
   $("#plate_11").flip();
   $("#plate_12").flip();
-  $("#italy_1").flip();
-  $("#italy_2").flip();
-  $("#italy_3").flip();
-  $("#italy_4").flip();
-  $("#italy_5").flip();
-  $("#italy_6").flip();
+  $("#italy_1").flip({trigger: 'manual',axis: 'x'});
+  $("#italy_2").flip({trigger: 'manual',axis: 'x'});
+  $("#italy_3").flip({trigger: 'manual',axis: 'x'});
+  $("#italy_4").flip({trigger: 'manual',axis: 'x'});
+  $("#italy_5").flip({trigger: 'manual',axis: 'x'});
+  $("#italy_6").flip({trigger: 'manual',axis: 'x'});
+  // $("#message_1").flip({axis: 'y'});
+
+  var messages = {
+    carbonara: "You just discovered an Italian national dish! CARBONARA",
+    pizza: "You just discovered an Italian national dish! PIZZA!",
+    tortellini: "You just discovered an Italian national dish! TORTELLINI",
+    cannoli: "You just discovered an Italian national dish! CANNOLI",
+    panettone: "You just discovered an Italian national dish! PANETTONE",
+    peperoncino: "You just discovered an Italian national dish! PEPERONCINO"
+
+  }
+
 
   var $food = $('.food');
   var choice_1 = null;
@@ -35,6 +47,7 @@ $(function() {
     if (choice_2 && choice_1.data('food') === choice_2.data('food')) {
       console.log(choice_2);
       $('#italy_' + choice_2.data('italy')).flip(true);
+      document.getElementById("message").innerHTML = messages[choice_1.data('food')];
       choice_1 = null;
       choice_2 = null;
     } else if (choice_2 && choice_1.data('food') !== choice_2.data('food')) {
@@ -46,5 +59,6 @@ $(function() {
         choice_2 = null;
       }, 1000);
     }
+
   });
 });
